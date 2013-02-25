@@ -1,0 +1,3 @@
+[submodule "dotfiles/confighelper"]
+	path = dotfiles/confighelper
+	url = git.jabbas.pl:confighelper
