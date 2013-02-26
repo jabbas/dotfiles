@@ -15,11 +15,6 @@ class NullHandler(logging.Handler):
         pass
 logger.addHandler(NullHandler())
 
-logging.basicConfig(
-        format="[%(asctime)s] [%(levelname)-8s] %(name)s - %(message)s",
-        level=logging.DEBUG
-)
-
 def makeDefaults(cfg):
     cfg.git_bin = 'git'
     cfg.git_dir = '~/.dotfiles'
@@ -29,7 +24,7 @@ confighelper.makedefaults = makeDefaults
 cfg = confighelper.get(__name__)
 
 class Dotfiles(object):
-    def __init__(self, cfg):
+    def __init__(self):
         object.__init__(self)
         self.git_bin = cfg.git_bin
         self.git_dir = os.path.expanduser(cfg.git_dir)
@@ -61,6 +56,5 @@ class Dotfiles(object):
         logger.debug("Launching '%s'" % cmd)
         os.system(cmd)
 
-
-df = Dotfiles(cfg)
-df.launch()
+def main():
+    Dotfiles().launch()
