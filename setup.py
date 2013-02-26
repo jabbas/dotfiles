@@ -16,7 +16,8 @@ setup(
     license = "GPLv3+",
     keywords = "dotfiles git wrapper",
     url = "http://git.jabbas.eu/dotfiles.git",
-    packages=find_packages(),
+    packages = find_packages(),
+    entry_points = { "console_scripts": ["dtf = dotfiles:main"] },
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
