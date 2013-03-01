@@ -16,7 +16,7 @@ GIT_DIR (the git repository) is held in ~/.dotfiles
 
 ## Usage
 
-You need to explicitly add each file/directory with `dtf add` to get it tracked by dotfiles, but except of that use `dtf` exactly the in the same manner as you use `git` command.
+You need to explicitly add each file/directory with `dtf add` to get it tracked by dotfiles, but except of that usage of `dtf` is exactly the same as `git` command.
 Shortly: `dtf` does not tread all files within `~` as untracked.
 
 ## TODO
