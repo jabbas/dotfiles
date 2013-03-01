@@ -10,9 +10,9 @@ Just:
 
 ## Configuration
 
-Default configuration is held in ~/.config/dotfiles.ini and it's generated automatically with first use
+Default configuration is held in `~/.config/dotfiles.ini` and it's generated automatically with first use
 
-GIT_DIR (the git repository) is held in ~/.dotfiles
+GIT_DIR (the git repository) is held in `~/.dotfiles`
 
 ## Usage
 
